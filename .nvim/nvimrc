@@ -1,9 +1,10 @@
+
+let s:rtp = expand("<sfile>:p:h")
 if has('vim_starting')
-   set runtimepath+=expand('%:p:h')
+   exe "set runtimepath+=".s:rtp
 endif
 
-
-call plug#begin('~/.nvim/plugged')
+call plug#begin(s:rtp.'/plugged')
 
 Plug 'junegunn/vim-easy-align'
 Plug 'ctrlpvim/ctrlp.vim'
