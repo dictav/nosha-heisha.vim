@@ -6,6 +6,7 @@ endif
 
 call plug#begin(s:rtp.'/plugged')
 
+Plug 'fmoralesc/vim-tutor-mode'
 Plug 'junegunn/vim-easy-align'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
