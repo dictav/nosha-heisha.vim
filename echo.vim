@@ -1,0 +1,10 @@
+echom getcwd()
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"
+echom "Hello, world!"

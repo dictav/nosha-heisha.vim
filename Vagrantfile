@@ -37,7 +37,7 @@ Vagrant.configure(2) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  # config.vm.synced_folder "./", "/home/vagrant"
   
   # parallels
   config.vm.provider "parallels" do |pd, override|
@@ -77,7 +77,7 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get install -y python-dev python-pip python3-dev python3-pip
+    sudo apt-get install -y git python-dev python-pip python3-dev python3-pip
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository ppa:neovim-ppa/unstable
     sudo apt-get update

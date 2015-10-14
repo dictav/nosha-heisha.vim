@@ -1,0 +1,36 @@
+if has('vim_starting')
+   set runtimepath+=expand('%:p:h')
+endif
+
+
+call plug#begin('~/.nvim/plugged')
+
+Plug 'junegunn/vim-easy-align'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'mattn/sonictemplate-vim'
+Plug 'justinmk/vim-dirvish'
+Plug 'itchyny/lightline.vim'
+Plug 'deris/vim-duzzle'
+
+call plug#end()
+
+
+" EasyAlign
+vnoremap <silent> <Enter> :EasyAlign<cr>
+
+" General
+set encoding=utf-8
+set directory=~/.nvim/tmp
+set backupdir=~/.nvim/tmp
+if has('persistent_undo')
+  set undodir=~/.nvim/tmp
+  set undofile
+endif
+set background=dark
+set ignorecase
+
+set nocompatible
+filetype plugin on
+syntax on
