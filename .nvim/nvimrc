@@ -24,14 +24,14 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 
 " General
 set encoding=utf-8
-set directory=~/.nvim/tmp
-set backupdir=~/.nvim/tmp
-if has('persistent_undo')
-  set undodir=~/.nvim/tmp
-  set undofile
-endif
 set background=dark
 set ignorecase
+let &directory = s:rtp."/tmp"
+let &backupdir = s:rtp."/tmp"
+if has('persistent_undo')
+  let &undodir = s:rtp."/tmp"
+  set undofile
+endif
 
 set nocompatible
 filetype plugin on
