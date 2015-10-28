@@ -15,6 +15,7 @@ Plug 'mattn/sonictemplate-vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'itchyny/lightline.vim'
 Plug 'deris/vim-duzzle'
+exe "Plug '".s:rtp."/../vim-hello'"
 
 call plug#end()
 
