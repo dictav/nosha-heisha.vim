@@ -6,8 +6,15 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! g:hello#world()
-  echom "Hello, world!"
+echom 'Initialized'
+function! g:hello#world() range
+	for n in range(a:firstline, a:lastline)
+		echom "Hello, ".getline(n)
+	endfor
+endfunction
+
+function! g:hello#line()
+  echom 'hello line'
 endfunction
 
 let &cpo = s:save_cpo
